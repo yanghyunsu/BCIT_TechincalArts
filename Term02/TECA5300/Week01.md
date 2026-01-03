@@ -14,11 +14,19 @@ dsgdsgsgd
 - 
 LOD - Level of Detail
 <img width="1142" height="570" alt="image" src="https://github.com/user-attachments/assets/7469fac7-02e8-46b2-a889-224e781c4104" />
-Highest LOD - LOD 0 - LOD 3 - LOD 5
-https://www.fab.com/listings/f5edf787-c6fe-4452-b952-ad66ce7581a0
+Highest LOD - LOD 0 - LOD 3 - LOD 5  
+https://www.fab.com/listings/f5edf787-c6fe-4452-b952-ad66ce7581a0  
 
 
 Collision 
 - doesnt need to match exact depending on its use, colliders cannot be concave
   - to avoid this create multiple convex colliders
-- you can remove and add colliders on the same object 
+- you can add and remove collision defaults in UE inside the static mesh's option menu 
+- you can have multiple colliders on same object 
+- should not overlap each other
+- you can make collider out of multiple boxes, they are seen as one collider as a whole.
+
+- Naming convetion in maya
+<img width="179" height="66" alt="image" src="https://github.com/user-attachments/assets/59aca50b-f57e-43ea-920a-254a5ba19b92" />
+UCX_statue_01  
+UCX is prefix  
