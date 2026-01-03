@@ -26,7 +26,7 @@ Collision
 - should not overlap each other
 - you can make collider out of multiple boxes, they are seen as one collider as a whole.
 
-- Naming convetion in maya
-<img width="179" height="66" alt="image" src="https://github.com/user-attachments/assets/59aca50b-f57e-43ea-920a-254a5ba19b92" />
+- Naming convention in maya
+<img width="179" height="66" alt="image" src="https://github.com/user-attachments/assets/59aca50b-f57e-43ea-920a-254a5ba19b92" />  
 UCX_statue_01  
-UCX is prefix  
+UCX is prefix - custom collision meshes, Universal Collision(Convex)    
