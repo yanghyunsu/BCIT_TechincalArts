@@ -28,7 +28,7 @@ Collision
 
 - Naming convention in maya
 <img width="179" height="66" alt="image" src="https://github.com/user-attachments/assets/59aca50b-f57e-43ea-920a-254a5ba19b92" />  
-UCX_ is prefix - custom collision meshes, Universal Collision(Convex)    
+- UCX_ is prefix - custom collision meshes, Universal Collision(Convex)    
   - copy and paste the static mesh names
 
 06 Grid System - 12 Exporting and Importing 
@@ -50,6 +50,7 @@ Pivot point
 - pivot point is where the object literally points from where it will snap to the grid
 
 <img width="652" height="660" alt="image" src="https://github.com/user-attachments/assets/b172c36f-41fd-4999-8865-4cbcf76bd694" />  
+
 - When you try to export file from Maya to UE always use Game Exporter instead of General Export
 
 * When you need to fix pivot point or material go back to source file *
