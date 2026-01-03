@@ -34,6 +34,7 @@ UCX_ is prefix - custom collision meshes, Universal Collision(Convex)
 06 Grid System - 12 Exporting and Importing 
 -
 - USD pipeline
+- 
   
 - The colliders might import a material slot, if they do this just make sure the collider has the same material assigned as the object (or one of) so that it doesnt create an extra slot
 <img width="1082" height="491" alt="image" src="https://github.com/user-attachments/assets/13176442-f9b1-46e8-be7e-28d2e9061d98" />
@@ -41,13 +42,14 @@ grid option in Maya
 1 unit is 1 cm  
 Axes is length and width units  
 
-<img width="1195" height="605" alt="image" src="https://github.com/user-attachments/assets/6ce24cc6-a20f-41f5-976f-b47af7ef4d34" />
+<img width="1195" height="605" alt="image" src="https://github.com/user-attachments/assets/6ce24cc6-a20f-41f5-976f-b47af7ef4d34" />  
 To snap to the grid, hlod down 'x' and with the grid lines its easy to know how big you object is without looking at measurments 
 
 Pivot point
 - pivot point dont all share one conrrect pivot location but objects having their correct pivot point is important
 - pivot point is where the object literally points from where it will snap to the grid
-<img width="652" height="660" alt="image" src="https://github.com/user-attachments/assets/b172c36f-41fd-4999-8865-4cbcf76bd694" />
-When you try to export file from Maya to UE always use Game Exporter instead of General Export
+
+<img width="652" height="660" alt="image" src="https://github.com/user-attachments/assets/b172c36f-41fd-4999-8865-4cbcf76bd694" />  
+- When you try to export file from Maya to UE always use Game Exporter instead of General Export
 
 * When you need to fix pivot point or material go back to source file *
