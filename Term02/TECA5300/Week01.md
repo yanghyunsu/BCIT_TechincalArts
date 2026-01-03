@@ -10,7 +10,7 @@ sdfsdfsghsfh
 -  
 dsgdsgsgd
 
-04 StaticMesh Overview & 05 LODs
+04 StaticMesh Overview ~ 05 LODs
 - 
 LOD - Level of Detail
 <img width="1142" height="570" alt="image" src="https://github.com/user-attachments/assets/7469fac7-02e8-46b2-a889-224e781c4104" />
@@ -31,7 +31,7 @@ Collision
 - UCX_ is prefix - custom collision meshes, Universal Collision(Convex)    
   - copy and paste the static mesh names
 
-06 Grid System - 12 Exporting and Importing 
+06 Grid System ~ 12 Exporting and Importing 
 -
 - USD pipeline
 - 
