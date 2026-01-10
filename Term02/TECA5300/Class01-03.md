@@ -77,7 +77,8 @@ Draw Calls
 
 <img width="440" height="483" alt="image" src="https://github.com/user-attachments/assets/89880ed4-4f92-4d46-87e5-44505f137b65" />
 <img width="1024" height="509" alt="image" src="https://github.com/user-attachments/assets/fe4a3b60-8ac8-425f-9241-2e197271de22" />
-- You can measure this with "stat RHI" (type in UE console : stat RHI)  
+
+- You can measure this with "stat RHI" (type in UE console : stat RHI)
 - 2000-3000 is reasonable  
 - 5K+ is getting high, more than 10K+ is probably a problem.   
 - Drawcalls have a huge impact on performance  
