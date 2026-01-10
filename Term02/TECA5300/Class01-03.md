@@ -77,36 +77,36 @@ Draw Calls
 
 <img width="440" height="483" alt="image" src="https://github.com/user-attachments/assets/89880ed4-4f92-4d46-87e5-44505f137b65" />
 <img width="1024" height="509" alt="image" src="https://github.com/user-attachments/assets/fe4a3b60-8ac8-425f-9241-2e197271de22" />
-- You can measure this with "stat RHI" (type in UE console : stat RHI)
-- 2000-3000 is reasonable
-- 5K+ is getting high, more than 10K+ is probably a problem. 
-- Drawcalls have a huge impact on performance
-- Each time the renderer is done it needs to receive commands from the render thread which adds overhead
-- Drawcalls have a much bigger impact than polycount in many scenarios
-- It used to matter in the 90s, it used to matter, but nowadays it's more about drawcalls.
-- Imagine copying 1 single 1 GB file (2-3 minutes?) VS Copying 1 million 1 KB files (1 days?)
-- Drawcall Performance Implications
-  - The cost to Rendering many polygons is often lower than the drawcall expense
-  - 50k triangles can run worse than 50 million dependent on implementation
-  - Drawcalls have a base expense thus optimizing low poly to super low poly may make zero difference
-  - Using a modular mesh workflow you can always merge meshes later on if needed and if the content is near final
-  - Use the Statistics and Stat commands to find the best choices for merging
-  - Once merged, you cannot easily go back. Only do this at the end.
-  - If you merge meshes following rules make better choices: The more common a mesh AND the lower poly the better
-  - Merge only meshes within the same area and/or sharing the same material
-  - Meshes with no or simple collision are better for merging
-  - Smaller meshes or meshes receiving only dynamic are better choices
-  - Distant geometry (far away) is usually great to merge
-  - You can merge things by simply exporting: Select Objects, Export, then merge in Maya and/or In UE, Select objects -> Tools -> Merge Actors  
-  - But, how much to merge and exactly how to is greatly dependant on many factors
-  - Oftend there is no need to merge anything. The majority of content knows no or little merging
-  - On very low end hardware you might merge almost everything
-  - Balance is Key
-  - Why not just figure out which objects are which? - You can do that. It's called **Instance Static Mesh rendering**
-  - It Automatically groups models together in single drawcalls
-  - It is not enabled standard because it gives overhead 
-  - Finally, there is LOD'ing - Level of Detail
-    - Simplifies a model or Bunch of models in given conditions
-    - Usually means a model becomes lower poly in the distances
-    - Essentially swaps on model for another simpler model
-    - HLOD is bigger version, it groups model together in the distance to lower the drawcalls 
+- You can measure this with "stat RHI" (type in UE console : stat RHI)  
+- 2000-3000 is reasonable  
+- 5K+ is getting high, more than 10K+ is probably a problem.   
+- Drawcalls have a huge impact on performance  
+- Each time the renderer is done it needs to receive commands from the render thread which adds overhead  
+- Drawcalls have a much bigger impact than polycount in many scenarios  
+- It used to matter in the 90s, it used to matter, but nowadays it's more about drawcalls.  
+- Imagine copying 1 single 1 GB file (2-3 minutes?) VS Copying 1 million 1 KB files (1 days?)  
+- Drawcall Performance Implications  
+  - The cost to Rendering many polygons is often lower than the drawcall expense  
+  - 50k triangles can run worse than 50 million dependent on implementation  
+  - Drawcalls have a base expense thus optimizing low poly to super low poly may make zero difference  
+  - Using a modular mesh workflow you can always merge meshes later on if needed and if the content is near final  
+  - Use the Statistics and Stat commands to find the best choices for merging  
+  - Once merged, you cannot easily go back. Only do this at the end.  
+  - If you merge meshes following rules make better choices: The more common a mesh AND the lower poly the better  
+  - Merge only meshes within the same area and/or sharing the same material  
+  - Meshes with no or simple collision are better for merging  
+  - Smaller meshes or meshes receiving only dynamic are better choices  
+  - Distant geometry (far away) is usually great to merge  
+  - You can merge things by simply exporting: Select Objects, Export, then merge in Maya and/or In UE, Select objects -> Tools -> Merge Actors    
+  - But, how much to merge and exactly how to is greatly dependant on many factors  
+  - Oftend there is no need to merge anything. The majority of content knows no or little merging  
+  - On very low end hardware you might merge almost everything  
+  - Balance is Key  
+  - Why not just figure out which objects are which? - You can do that. It's called **Instance Static Mesh rendering**  
+  - It Automatically groups models together in single drawcalls  
+  - It is not enabled standard because it gives overhead   
+  - Finally, there is LOD'ing - Level of Detail  
+    - Simplifies a model or Bunch of models in given conditions  
+    - Usually means a model becomes lower poly in the distances  
+    - Essentially swaps on model for another simpler model  
+    - HLOD is bigger version, it groups model together in the distance to lower the drawcalls   
