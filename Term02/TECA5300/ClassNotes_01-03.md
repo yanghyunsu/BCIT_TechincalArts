@@ -58,6 +58,12 @@ Pivot point
 
 * When you need to fix pivot point or material go back to source file *
 
+**Export animation from Maya to UE**
+
+<img width="661" height="699" alt="image" src="https://github.com/user-attachments/assets/264da99a-a98a-4a72-969b-89a3ea10a621" />
+
+- By selecting skeleton (Select->Hierarchy if need) and go to Game exporter, can export Animation clip 
+
 Week2 - 
 Geometry Rendering 
 -
@@ -111,3 +117,5 @@ Draw Calls
     - Usually means a model becomes lower poly in the distances  
     - Essentially swaps on model for another simpler model  
     - HLOD is bigger version, it groups model together in the distance to lower the drawcalls   
+
+
